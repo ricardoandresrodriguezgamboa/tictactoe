@@ -28,7 +28,7 @@ h1{
     height:600px;
     width:705px;
     background:#fff;
-    max-width:1400px;
+    
 }
 
 .contenedor:hover{
@@ -75,19 +75,62 @@ h1{
     font-size:40px;
     float:right;
     margin:-70px 30px 15px 15px;
-    transition: all 0.5s;
+    border-bottom:2px solid transparent;
     font-weight:bold;
 }
 
 .conf:hover{
-    color:#fff;
-    transition: all 0.5s;
+    border-bottom:2px solid #333;
+    transition: all 0.8s;
 }
 
 
+
+
 .btn-reset:hover{
+     
+
 
     box-shadow:0px 0px 16px grey;
+
+}
+
+.player1{
+    float:left;
+    font-family: 'Indie Flower', cursive;
+    font-size:35px;
+    margin:105px;
+    border-bottom:2px solid #333;
+   
+}
+
+.imgX{ 
+    
+   
+     float:left;
+     margin-top:200px;
+     margin-left:-200px;
+}
+
+.imgO{ 
+
+     float:right;
+     margin-top:210px;
+     margin-right:-100px;
+  
+}
+
+
+
+
+.player2{
+   
+    float:right;
+    font-family: 'Indie Flower', cursive;
+    font-size:35px;
+    margin-top:100px;
+    margin-right:150px;
+    border-bottom:2px solid #333;
 
 }
 
