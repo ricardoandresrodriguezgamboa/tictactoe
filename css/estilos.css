@@ -1,0 +1,110 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#46D2A8;
+  
+}
+
+h1{
+      font-family: 'Indie Flower', cursive;
+      font-size:40px;
+      text-align:center;
+      padding:10px;
+      text-decoration:underline;
+      color:#333;
+      margin-top:-120px;
+}
+
+#logo{
+    margin:10px 10px 10px 10px;
+}
+.contenedor{
+    margin:20px auto;
+    box-shadow:0px 0px 20px grey;
+    height:600px;
+    width:705px;
+    background:#fff;
+    max-width:1400px;
+}
+
+.contenedor:hover{
+        box-shadow:0px 0px 30px grey;
+}
+
+
+
+.block{
+  width:calc(30% + 23.5px);
+  background:#fff;
+  float:left;
+  text-align:center;
+  height:200px;
+  border:2px solid lightblue;
+  padding:80px;
+}
+
+.block:hover{
+  
+     cursor:pointer;
+     -moz-transform: scale(1.1);
+     -webkit-transform: scale(1.1);
+     transform: scale(1.1);
+     box-shadow:0px 0px 28px grey;
+     
+}
+
+
+.x-icon{
+    
+    margin:-100px;
+}
+
+.circle-icon{
+     
+     margin:-75px;
+}
+
+
+.conf{
+    text-decoration:none;
+    color:#333;
+    font-size:40px;
+    float:right;
+    margin:-70px 30px 15px 15px;
+    transition: all 0.5s;
+    font-weight:bold;
+}
+
+.conf:hover{
+    color:#fff;
+    transition: all 0.5s;
+}
+
+
+.btn-reset:hover{
+
+    box-shadow:0px 0px 16px grey;
+
+}
+
+@media screen and (max-width:940px){
+
+   #logo{
+       width:50px;
+       height:50px;
+   }
+
+   h1{margin-top:-70px;}
+
+}
+
+@media screen and (max-width:790px){
+
+    .contenedor{width:498px; height:491px;}
+    .block{width:33.3%; height:90px;}
+}
+
