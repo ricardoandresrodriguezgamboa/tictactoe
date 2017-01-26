@@ -16,11 +16,14 @@ h1{
       padding:10px;
       text-decoration:underline;
       color:#333;
-      margin-top:-120px;
+      margin:0 auto;
+      margin-top:-65px;
+      width:50%;
 }
 
 #logo{
     margin:10px 10px 10px 10px;
+
 }
 .contenedor{
     margin:20px auto;
@@ -38,13 +41,15 @@ h1{
 
 
 .block{
-  width:calc(30% + 23.5px);
+  /*width:calc(30% + 23.5px);*/
+  width:235px;
   background:#fff;
   float:left;
   text-align:center;
   height:200px;
   border:2px solid lightblue;
-  padding:80px;
+  /*padding:80px;*/
+  
 }
 
 .block:hover{
@@ -60,12 +65,12 @@ h1{
 
 .x-icon{
     
-    margin:-100px;
+    margin-top:-5px;
 }
 
 .circle-icon{
      
-     margin:-75px;
+    margin-top:20px;  
 }
 
 
@@ -77,6 +82,7 @@ h1{
     margin:-70px 30px 15px 15px;
     border-bottom:2px solid transparent;
     font-weight:bold;
+  
 }
 
 .conf:hover{
@@ -85,12 +91,21 @@ h1{
 }
 
 
+.btn-reset{
 
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin-top:-80px;
+    margin-left:130px;
+    box-shadow:0px 0px 5px grey;
+    background:lightblue;
+    width:150px;
+    text-align:center;
+    font-size:15px;
+}
 
 .btn-reset:hover{
-     
-
-
+ 
+    cursor:pointer;
     box-shadow:0px 0px 16px grey;
 
 }
@@ -101,10 +116,27 @@ h1{
     font-size:35px;
     margin:105px;
     border-bottom:2px solid #333;
+    position:absolute;
+    width:150px;
+    text-align:center;
    
 }
 
-.imgX{ 
+.player2{
+   
+    float:right;
+    font-family: 'Indie Flower', cursive;
+    font-size:35px;
+    top:184px;
+    right:105px;
+    border-bottom:2px solid #333;
+    width:150px;
+    position:absolute;
+    text-align:center;
+
+}
+
+/*.imgX{ 
     
    
      float:left;
@@ -118,23 +150,62 @@ h1{
      margin-top:210px;
      margin-right:-100px;
   
+}*/
+
+
+@media screen and (max-width:1240px){
+
+   .player1{
+
+    
+         left:-50px;
+         font-size:15px;
+         width:90px;
+
+  }
+
+
+  .player2{
+
+         top:300px;  
+         left:50px;
+         font-size:15px;
+         width:90px;
+
+  }
+    .contenedor{width:497px; height:491px;}
+    .block{width:33.33%; height:90px; padding:80px;}
+    
+    .conf{
+        font-size:25px;
+    }
+
+    .x-icon{
+        
+        margin-top:-100px;
+        margin-left:-70px;
+    
+        }
+
+     .circle-icon{
+        
+        margin-top:-75px;
+        margin-left:-70px;
+ 
+        }
+
+
+
 }
 
 
 
 
-.player2{
-   
-    float:right;
-    font-family: 'Indie Flower', cursive;
-    font-size:35px;
-    margin-top:100px;
-    margin-right:150px;
-    border-bottom:2px solid #333;
 
-}
 
-@media screen and (max-width:940px){
+
+
+/*@media screen and (max-width:940px){
 
    #logo{
        width:50px;
@@ -149,5 +220,5 @@ h1{
 
     .contenedor{width:498px; height:491px;}
     .block{width:33.3%; height:90px;}
-}
+}/*
 

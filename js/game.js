@@ -73,22 +73,26 @@ $(document).ready(function(){
             
                 
             });
-
+         
+          
             $('.btn-reset').click(function(){
                     
             $(".block img").remove();
             $('.block').removeClass('check-o');
             $('.block').removeClass('check-x');
             $('.block').css("pointer-events","auto");
+            $('.block').css('background','#fff');
+          
+
 
             contador = 0;
 
                 
             });
+       
 
 
-
-
+ 
 
 
 
@@ -97,7 +101,6 @@ $(document).ready(function(){
         
 
         contador = contador + 1;
-
 
 
         if (contador%2==0){
@@ -110,17 +113,30 @@ $(document).ready(function(){
             $(this).css("pointer-events","none");
             
         
-            /*  if($('#block1').hasClass('check-o') && $('#block2').hasClass('check-o') && $('#block3').hasClass('check-o') ){
-                    
-                    swal("Genial!", "Ganaste!!!" + " " + player2 + "", "success");
+              if($('#block1').hasClass('check-o') && $('#block2').hasClass('check-o') && $('#block3').hasClass('check-o') ){
+              
+             $('#block1').css('background','#00CCCC');
+             $('#block2').css('background','#00CCCC'); 
+             $('#block3').css('background','#00CCCC');  
+             swal("Genial!", "Ganaste!!!" + " " + player2 + "", "success");
+             setTimeout(function(){ 
+             $('.btn-reset').click(); 
+             }, 1500);
 
 
+      
             }
 
 
                 if($('#block4').hasClass('check-o') && $('#block5').hasClass('check-o') && $('#block6').hasClass('check-o') ){
                     
+                $('#block4').css('background','#00CCCC');
+                $('#block5').css('background','#00CCCC'); 
+                $('#block6').css('background','#00CCCC');  
                 swal("Genial!", "Ganaste!!!" + " " + player2 + "", "success");
+                setTimeout(function(){ 
+                $('.btn-reset').click(); 
+                }, 1500);
 
             }
 
@@ -129,22 +145,39 @@ $(document).ready(function(){
                 if($('#block7').hasClass('check-o') && $('#block8').hasClass('check-o') && $('#block9').hasClass('check-o') ){
                     
                     
+                    $('#block7').css('background','#00CCCC');
+                    $('#block8').css('background','#00CCCC'); 
+                    $('#block9').css('background','#00CCCC');  
                     swal("Genial!", "Ganaste!!!" + " " + player2 + "", "success");
+                    setTimeout(function(){ 
+                    $('.btn-reset').click(); 
+                    }, 1500);
 
             }
             
                 if($('#block1').hasClass('check-o') && $('#block4').hasClass('check-o') && $('#block7').hasClass('check-o') ){
                     
                     
+                    $('#block1').css('background','#00CCCC');
+                    $('#block4').css('background','#00CCCC'); 
+                    $('#block7').css('background','#00CCCC');  
                     swal("Genial!", "Ganaste!!!" + " " + player2 + "", "success");
-
+                    setTimeout(function(){ 
+                    $('.btn-reset').click(); 
+                    }, 1500);
 
             }
 
                 if($('#block2').hasClass('check-o') && $('#block5').hasClass('check-o') && $('#block8').hasClass('check-o') ){
                     
                     
-                swal("Genial!", "Ganaste!!!" + " " + player2 + "", "success");
+                    $('#block2').css('background','#00CCCC');
+                    $('#block5').css('background','#00CCCC'); 
+                    $('#block8').css('background','#00CCCC');  
+                    swal("Genial!", "Ganaste!!!" + " " + player2 + "", "success");
+                    setTimeout(function(){ 
+                    $('.btn-reset').click(); 
+                    }, 1500);
 
             }
 
@@ -152,14 +185,26 @@ $(document).ready(function(){
                 if($('#block3').hasClass('check-o') && $('#block6').hasClass('check-o') && $('#block9').hasClass('check-o') ){
                     
                     
-                    sswal("Genial!", "Ganaste!!!" + " " + player2 + "", "success");
+                    $('#block3').css('background','#00CCCC');
+                    $('#block6').css('background','#00CCCC'); 
+                    $('#block39').css('background','#00CCCC');  
+                    swal("Genial!", "Ganaste!!!" + " " + player2 + "", "success");
+                    setTimeout(function(){ 
+                    $('.btn-reset').click(); 
+                    }, 1500);
 
             }
 
                     if($('#block1').hasClass('check-o') && $('#block5').hasClass('check-o') && $('#block9').hasClass('check-o') ){
                     
                     
-                    swal("Genial!", "Ganaste!!!" + " " + player2 + "", "success");
+                     $('#block1').css('background','#00CCCC');
+                     $('#block5').css('background','#00CCCC'); 
+                     $('#block9').css('background','#00CCCC');  
+                     swal("Genial!", "Ganaste!!!" + " " + player2 + "", "success");
+                     setTimeout(function(){ 
+                     $('.btn-reset').click(); 
+                     }, 1500);
 
 
             } 
@@ -168,10 +213,16 @@ $(document).ready(function(){
                     if($('#block3').hasClass('check-o') && $('#block5').hasClass('check-o') && $('#block7').hasClass('check-o') ){
                     
                     
-                    swal("Genial!", "Ganaste!!!" + " " + player2 + "", "success");
+                     $('#block3').css('background','#00CCCC');
+                     $('#block5').css('background','#00CCCC'); 
+                     $('#block7').css('background','#00CCCC');  
+                     swal("Genial!", "Ganaste!!!" + " " + player2 + "", "success");
+                     setTimeout(function(){ 
+                     $('.btn-reset').click(); 
+                     }, 1500);
 
 
-            }*/
+            }
 
         
         
@@ -184,16 +235,26 @@ $(document).ready(function(){
 
             if($(this).prop("id").length > 0){
             
-        
+         
             $(this).html ("<img class='x-icon' src='"+img_x+"' height='200px' width='150px'>");
             $(this).addClass('check-x');
             $(this).css("pointer-events","none");
 
             if($('#block1').hasClass('check-x') && $('#block2').hasClass('check-x') && $('#block3').hasClass('check-x') ){
-                    
-                    swal("Genial!", "Ganaste!!!" + " " + player1 + "", "success");
-                
-
+              
+             $('#block1').css('background','#00CCCC');
+             $('#block2').css('background','#00CCCC'); 
+             $('#block3').css('background','#00CCCC');  
+             swal("Genial!", "Ganaste!!!" + " " + player1 + "", "success");
+             setTimeout(function(){ 
+             $('.btn-reset').click(); 
+             }, 1500);
+       
+         
+                  
+ 
+       
+                     
 
             }
 
@@ -201,7 +262,13 @@ $(document).ready(function(){
        
                     if($('#block4').hasClass('check-x') && $('#block5').hasClass('check-x') && $('#block6').hasClass('check-x') ){
                         
-                            swal("Genial!", "Ganaste!!!" + " " + player1 + "", "success");
+                        $('#block4').css('background','#00CCCC');
+                        $('#block5').css('background','#00CCCC'); 
+                        $('#block6').css('background','#00CCCC');  
+                        swal("Genial!", "Ganaste!!!" + " " + player1 + "", "success");
+                        setTimeout(function(){ 
+                        $('.btn-reset').click(); 
+                        }, 1500);
 
 
                 }
@@ -210,21 +277,39 @@ $(document).ready(function(){
                 
                     if($('#block7').hasClass('check-x') && $('#block8').hasClass('check-x') && $('#block9').hasClass('check-x') ){
                         
+                            $('#block7').css('background','#00CCCC');
+                            $('#block8').css('background','#00CCCC'); 
+                            $('#block9').css('background','#00CCCC');  
                             swal("Genial!", "Ganaste!!!" + " " + player1 + "", "success");
+                            setTimeout(function(){ 
+                            $('.btn-reset').click(); 
+                            }, 1500);
 
 
                 }
                 
                     if($('#block1').hasClass('check-x') && $('#block4').hasClass('check-x') && $('#block7').hasClass('check-x') ){
                         
+                        $('#block1').css('background','#00CCCC');
+                        $('#block4').css('background','#00CCCC'); 
+                        $('#block7').css('background','#00CCCC');  
                         swal("Genial!", "Ganaste!!!" + " " + player1 + "", "success");
+                        setTimeout(function(){ 
+                        $('.btn-reset').click(); 
+                        }, 1500);
 
 
                 }
 
                     if($('#block2').hasClass('check-x') && $('#block5').hasClass('check-x') && $('#block8').hasClass('check-x') ){
                         
+                        $('#block2').css('background','#00CCCC');
+                        $('#block5').css('background','#00CCCC'); 
+                        $('#block8').css('background','#00CCCC');  
                         swal("Genial!", "Ganaste!!!" + " " + player1 + "", "success");
+                        setTimeout(function(){ 
+                        $('.btn-reset').click(); 
+                        }, 1500);
 
 
                 }
@@ -232,13 +317,25 @@ $(document).ready(function(){
                 
                     if($('#block3').hasClass('check-x') && $('#block6').hasClass('check-x') && $('#block9').hasClass('check-x') ){
                         
+                        $('#block3').css('background','#00CCCC');
+                        $('#block6').css('background','#00CCCC'); 
+                        $('#block9').css('background','#00CCCC');  
                         swal("Genial!", "Ganaste!!!" + " " + player1 + "", "success");
+                        setTimeout(function(){ 
+                        $('.btn-reset').click(); 
+                        }, 1500);
 
                 }
 
                         if($('#block1').hasClass('check-x') && $('#block5').hasClass('check-x') && $('#block9').hasClass('check-x') ){
                         
+                        $('#block1').css('background','#00CCCC');
+                        $('#block5').css('background','#00CCCC'); 
+                        $('#block9').css('background','#00CCCC');  
                         swal("Genial!", "Ganaste!!!" + " " + player1 + "", "success");
+                        setTimeout(function(){ 
+                        $('.btn-reset').click(); 
+                        }, 1500);
 
 
                 } 
@@ -246,7 +343,13 @@ $(document).ready(function(){
 
                         if($('#block3').hasClass('check-x') && $('#block5').hasClass('check-x') && $('#block7').hasClass('check-x') ){
                         
+                        $('#block3').css('background','#00CCCC');
+                        $('#block5').css('background','#00CCCC'); 
+                        $('#block7').css('background','#00CCCC');  
                         swal("Genial!", "Ganaste!!!" + " " + player1 + "", "success");
+                        setTimeout(function(){ 
+                        $('.btn-reset').click(); 
+                        }, 1500);
 
                 }
 
@@ -258,6 +361,8 @@ $(document).ready(function(){
 
 
 });
+ 
+   
 
    
 });
